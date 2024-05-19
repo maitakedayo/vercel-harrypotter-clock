@@ -3,7 +3,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import charactersData from "./data/characters.json";
-import Footer from "./Footer/index.tsx";
+import Footer from "./Footer/index";
 
 function updateClock() {
   const now = new Date();
