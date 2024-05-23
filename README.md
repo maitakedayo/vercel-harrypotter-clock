@@ -3,7 +3,7 @@
 【作成環境】
 --------------------
 - - Windows 11 
-- - Node.js
+- - TypeScript
 - - Nextjs
 - - Tailwind CSS
 ---------------------

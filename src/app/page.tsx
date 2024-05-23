@@ -1,9 +1,11 @@
 "use client";
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import charactersData from "./data/characters.json";
 import Footer from "./Footer/index";
+
+const MemoizedFooter = React.memo(Footer);
 
 function updateClock() {
   const now = new Date();
@@ -220,7 +222,9 @@ export default function Home() {
           Icons8
         </a>
       </div>
-      <Footer/>
+      <div className="pt-6">
+        <MemoizedFooter />
+      </div>
     </div>
   );
 }
